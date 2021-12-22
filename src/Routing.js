@@ -4,6 +4,8 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Auth from "./components/Auth/Auth";
 import DetailsProduct from "./components/DetailsProduct/DetailsProduct";
 import EditProduct from "./components/EditProduct/EditProduct";
+import Cart from "./components/Cart/Cart";
+import Heroes from "./components/Heroes/Heroes";
 import Home from "./components/Home/Home";
 import ProductsList from "./components/ProductsList/ProductsList";
 import { useAuth } from "./contexts/authContext";
@@ -32,6 +34,16 @@ const Routing = () => {
       element: <DetailsProduct />,
       id: 4,
     },
+    {
+      link: "/heroes",
+      element: <Heroes />,
+      id: 5,
+    },
+    {
+      link: "/cart",
+      element: <Cart />,
+      id: 6
+    }
   ];
   const ADMIN_ROUTES = [
     {

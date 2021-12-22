@@ -3,29 +3,67 @@
     {
       "model": "ABADDON",
       "description": "Abaddon, способный лечиться за счёт вражеских атак, может пережить почти любое нападение. Он всегда готов вклиниться в битву, закрывая союзников щитом и запуская обоюдоострые витки мглы, которыми он увечит врагов и исцеляет товарищей.",
-      "price": 2150,
+      "price": 21,
       "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.png",
-      "image2": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.png",
       "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.webm",
-      "id": 2
+      "id": 1
     },
     {
       "model": "ALCHEMIST",
       "description": "Alchemist, синтезирующий дополнительные средства за каждое убийство, с лёгкостью получает необходимое вооружение. Он сражается во имя своей жадности, используя едкую кислоту и запас нестабильных химикатов.",
-      "price": 7100,
+      "price": 71,
       "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png",
-      "image2": "https://content.thewosgroup.com/productimage/17381091/17381091_2.jpg?impolicy=zoom",
       "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.webm",
-      "id": 3
+      "id": 2
     },
     {
-      "model": "asd",
-      "description": "asd",
-      "price": 123,
-      "image1": "asd",
-      "image2": "asd",
-      "video": "asd",
+      "model": "Ancient Apparition",
+      "description": "Ancient Apparition, способный запустить мощный заряд льда через всё поле битвы, может заморозить раненых врагов до смерти, где бы те ни находились. Он держит врагов в напряжении, замедляя их и помогая своим союзникам.",
+      "price": 10,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ancient_apparition.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ancient_apparition.webm",
+      "id": 3,
+      "image2": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ancient_apparition.png"
+    },
+    {
+      "model": "ANTI-MAGE",
+      "description": "Если Anti-Mage наберёт полную силу, мало кто сможет его остановить. Он способен забирать у врагов ману каждым ударом или телепортироваться на небольшие расстояния, что не позволяет врагам загнать его в угол.",
+      "price": 12,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/antimage.webm",
       "id": 4
+    },
+    {
+      "model": "ARC WARDEN",
+      "description": "Зет, Arc Warden — разбитый осколок той древней мощи, что породила самих Древних, и он намерен прекратить схватку Света и Тьмы. Сковывайте одиноких врагов потоками энергии или искажайте пространство, создавая защитное поле для союзников. Призывайте призрачные искры, нападающие на приблизившихся противников, или же полную копию самого себя со всеми предметами и способностями, способную сокрушить неприятеля.",
+      "price": 12,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/arc_warden.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/arc_warden.webm",
+      "id": 5
+    },
+    {
+      "model": "AXE",
+      "description": "Axe рубит одного врага за другим, неизменно ступая впереди своей команды. Он вынуждает противников вступить в бой, а затем отвечает на их удары смертоносными взмахами топора. Нещадно круша ослабленных врагов, он всегда несётся вперёд.",
+      "price": 56,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/axe.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/axe.webm",
+      "id": 6
+    },
+    {
+      "model": "BANE",
+      "description": "Bane наводит ужас на врагов своим арсеналом обездвиживающих способностей. Погружая противников в заразительные кошмары или удерживая их на месте, он даёт союзникам достаточно времени, чтобы прикончить неприятеля.",
+      "price": 51,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/bane.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/bane.webm",
+      "id": 7
+    },
+    {
+      "model": "BATRIDER",
+      "description": "Взмыв в небеса, Batrider может нанести удар с любой стороны. Захватив противника своим лассо, он поднимается над верхушками деревьев и тащит жертву по тропе огня прямо к своим беспощадным союзникам.",
+      "price": 54,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/batrider.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/batrider.webm",
+      "id": 8
     }
   ]
 }

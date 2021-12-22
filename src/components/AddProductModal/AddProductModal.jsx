@@ -83,20 +83,7 @@ const AddProductModal = () => {
             rules={[
               {
                 required: true,
-                message: "Please input URL of image 1!",
-              },
-            ]}
-          >
-            <Input />
-          </Form.Item>
-
-          <Form.Item
-            label="Image 2"
-            name="image2"
-            rules={[
-              {
-                required: true,
-                message: "Please input URL of image 2!",
+                message: "Please input URL of image!",
               },
             ]}
           >

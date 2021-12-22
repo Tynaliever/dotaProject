@@ -1,76 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 
 import { Card, Avatar } from "antd";
-import {
-  EditOutlined,
-  EllipsisOutlined,
-  SettingOutlined,
-} from "@ant-design/icons";
 
 import "./Home.css";
-import { Link, useSearchParams } from "react-router-dom";
-import { productsContext } from "../../contexts/productsContext";
 
 const { Meta } = Card;
 const Home = () => {
-  const { products, getProducts } = useContext(productsContext);
-  // const {addProductToCart} = useContext(cartContext);
-  useEffect(() => {
-    getProducts();
-  }, []);
-
-  // pagination
-  const { productsTotalCount } = useContext(productsContext);
-  const [searchParams, setSearchParams] = useSearchParams();
-  const [valueSlider, setValueSlider] = useState([0, 1000]);
-
-  const [search, setSearch] = useState(
-    searchParams.get("q") ? searchParams.get("q") : ""
-  );
-  const [page, setPage] = useState(
-    searchParams.get("_page") ? searchParams.get("_page") : 1
-  );
-  const [limit, setLimit] = useState(
-    searchParams.get("_limit") ? searchParams.get("_limit") : 8
-  );
-
-  useEffect(() => {
-    setSearchParams({
-      q: search,
-      _page: page,
-      _limit: limit,
-      price_gte: valueSlider[0],
-      price_lte: valueSlider[1],
-    });
-  }, []);
-
-  useEffect(() => {
-    getProducts();
-  }, [searchParams]);
-
-  useEffect(() => {
-    setSearchParams({
-      q: search,
-      _page: page,
-      _limit: limit,
-      price_gte: valueSlider[0],
-      price_lte: valueSlider[1],
-    });
-  }, [search, page, limit, valueSlider]);
-  // end pagination
-  console.log("valueSlider", valueSlider);
-  const handleChange = (event, value) => {
-    setPage(value);
-  };
-
-  const handleChangeSlider = (event, newValue) => {
-    setValueSlider(newValue);
-    console.log("newValue", newValue);
-  };
-
-  function valuetext(value) {
-    return `$ ${value}`;
-  }
   return (
     <>
       <div className="home">

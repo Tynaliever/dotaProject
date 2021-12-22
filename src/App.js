@@ -8,19 +8,20 @@ import "antd/dist/antd.css";
 import AuthContextProvider from "./contexts/authContext";
 import { BrowserRouter } from "react-router-dom";
 import ProductsContextProvider from "./contexts/productsContext";
+import CartContextProvider from "./contexts/cartContext";
 import Routing from "./Routing";
-
-
 
 const App = () => {
   return (
     <AuthContextProvider>
-      <ProductsContextProvider>
-      <BrowserRouter>
-        <Header />
-        <Routing/>
-      </BrowserRouter>
-      </ProductsContextProvider>
+      <CartContextProvider>
+        <ProductsContextProvider>
+          <BrowserRouter>
+            <Header />
+            <Routing />
+          </BrowserRouter>
+        </ProductsContextProvider>
+      </CartContextProvider>
     </AuthContextProvider>
   );
 };

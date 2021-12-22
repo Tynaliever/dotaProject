@@ -6,8 +6,9 @@ import { Carousel, Button } from "antd";
 import { productsContext } from "../../contexts/productsContext";
 
 import "./DetailProduct.css";
+import { cartContext } from "../../contexts/cartContext";
 
-const DetailsProduct = () => {
+const DetailsProduct = ({ item }) => {
   const { id } = useParams();
   const { getOneProduct, oneProduct } = useContext(productsContext);
   const [products, setProducts] = useState(null);

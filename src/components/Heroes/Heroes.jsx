@@ -1,52 +1,76 @@
 import React, { useContext, useEffect, useState } from "react";
-import { useSearchParams } from "react-router-dom";
 
-import { Input, Pagination, Empty, Slider } from "antd";
+import { Card, Avatar, List, Pagination } from "antd";
 
+import "./Heroes.css";
+import ProductsList from "../ProductsList/ProductsList";
+import { Link, useSearchParams } from "react-router-dom";
 import { productsContext } from "../../contexts/productsContext";
+import {
+  EditOutlined,
+  EllipsisOutlined,
+  SettingOutlined,
+} from "@ant-design/icons";
 
-import ProductCard from "./ProductCard";
+import { Slider } from "antd";
 
-import "./ProductsList.css";
-import Heroes from "../Heroes/Heroes";
+const { Meta } = Card;
 
-const ProductsList = () => {
+const Heroes = () => {
   const [searchParams, setSearchParams] = useSearchParams();
+  const { getProducts, deleteProduct, products, productsTotalCount } =
+    useContext(productsContext);
+
+  const [model, setModel] = useState([]);
+  const [price, setPrice] = useState([1, 10000]);
+
   const [search, setSearch] = useState(
     searchParams.get("q") ? searchParams.get("q") : ""
   );
-  const [page, setPage] = useState(
+
+  const [currentPage, setCurrentPage] = useState(
     searchParams.get("_page") ? searchParams.get("_page") : 1
   );
   const [limit, setLimit] = useState(
-    searchParams.get("_limit") ? searchParams.get("_limit") : 4
+    searchParams.get("_limit") ? searchParams.get("_limit") : 8
   );
-  const [price, setPrice] = useState([1, 1000000]);
-  const [showFilters, setShowFilters] = useState(false);
-  const { getProducts, products, productsTotalCount } =
-    useContext(productsContext);
   useEffect(() => {
     setSearchParams({
       q: search,
-      _page: page,
+      _page: currentPage,
       _limit: limit,
       price_gte: price[0],
       price_lte: price[1],
     });
   }, []);
+
   useEffect(() => {
     getProducts();
   }, [searchParams]);
+
   useEffect(() => {
     setSearchParams({
       q: search,
-      _page: page,
+      _page: currentPage,
       _limit: limit,
       price_gte: price[0],
       price_lte: price[1],
     });
-  }, [search, page, limit, price]);
-  console.log(products);
+  }, [search, currentPage, limit, price]);
+  useEffect(() => {
+    getProducts();
+  }, [searchParams]);
+  //   console.log(window.location.search);
+
+  //   const handleChange = (event, value) => {
+  //     setCurrentPage(value);
+  //   };
+
+  //   const handleChangeSlider = (event, newValue) => {
+  //     setPrice(newValue);
+  //     console.log("newValue", newValue);
+  //   };
+
   return (
     <div className="heroes-container">
       <div className="heroes-wrapper">
@@ -97,35 +121,37 @@ const ProductsList = () => {
           </div>
         </div>
       </div>
-      {/* {showFilters ? (
-        <Filters
-          brand={brand}
-          setBrand={setBrand}
-          price={price}
-          setPrice={setPrice}
-        />
-      ) : null} */}
-      <div className="products-list">
-        {products.length > 0 ? (
-          products.map((item) => <ProductCard item={item} />)
-        ) : (
-          <Empty style={{ marginBottom: "20px" }} />
-        )}
+      <div className="card-container">
+        {products.map((item) => (
+          <Link to={`/products/${item.id}`}>
+            <Card
+              className="heroes-card"
+              hoverable
+              style={{ width: 300 }}
+              cover={<img alt="example" src={item.image1} />}
+            >
+              <Meta
+                style={{ textAlign: "center", color: "white" }}
+                title={item.model}
+                description={`$ ${item.price}`}
+              />
+            </Card>
+          </Link>
+        ))}
       </div>
-      <div style={{ display: "flex", justifyContent: "center" }}>
-        <Pagination
-          onChange={(page, limit) => {
-            setPage(page);
-            setLimit(limit);
-          }}
-          current={+page}
-          pageSize={+limit}
-          defaultCurrent={1}
-          total={+productsTotalCount}
-        />
-      </div>
+      <Pagination
+        className="pagination"
+        onChange={(page, limit) => {
+          setCurrentPage(page);
+          setLimit(limit);
+        }}
+        current={+currentPage}
+        defaultCurrent={1}
+        total={+productsTotalCount}
+        pageSize={+limit}
+      />
     </div>
   );
 };
 
-export default ProductsList;
+export default Heroes;

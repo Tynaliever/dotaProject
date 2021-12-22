@@ -45,21 +45,22 @@ const AdminProductsList = () => {
           <List.Item
             actions={[
               <a
+              className="admin-list-item" style={{color: 'grey'}}
                 key="list-loadmore-edit"
                 onClick={() => deleteProduct(item.id)}
               >
                 delete
               </a>,
-              <Link to={`/edit/${item.id}`}>edit</Link>,
-              <Link to={`/products/${item.id}`}>more</Link>,
+              <Link to={`/edit/${item.id}`} className="admin-list-item" style={{color: 'grey'}}>edit</Link>,
+              <Link to={`/products/${item.id}`} className="admin-list-item" style={{color: 'grey'}}>more</Link>,
             ]}
           >
             <List.Item.Meta
               avatar={<Avatar src={item.image1} />}
               title={
-                <a className="admin-list-item" style={{color: 'grey'}}>
-                  {item.brand}, {item.model}
-                </a>
+                  <Link to={`/products/${item.id}`} className="admin-list-item" style={{color: 'grey'}}>
+                 {item.model}
+                 </Link>
               }
             />
           </List.Item>

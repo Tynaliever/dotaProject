@@ -18,22 +18,23 @@ const ProductCard = ({ item }) => {
   })
   return (
     <Card
+    className="product-card"
       hoverable
       key={item.id}
       style={{ width: "280px", margin: "10px" }}
       cover={<img alt="example" src={item.image1} />}
       actions={[
-        <StarOutlined style={{ color: "black", fontSize: "25px" }} />,
+        <StarOutlined style={{color: "yellow", fontSize: "25px"}} />,
         <ShoppingCartOutlined
-          style={{ color: checkInCart ? "red" : "black", fontSize: "25px" }}
+          style={{backgroundColor: 'transparent', color: checkInCart ? "red" : "black", fontSize: "25px" }}
           onClick={() => {
             addProductToCart(item);
             setCheckInCart(checkItemInCart(item.id));
           }}
         />,
-        <Link to={`/products/${item.id}`}>
+        <Link style={{backgroundColor: 'transparent'}} to={`/products/${item.id}`}>
           <EllipsisOutlined
-            style={{ color: "black", fontSize: "25px" }}
+            style={{backgroundColor: 'transparent', color: "grey", fontSize: "25px" }}
             key="ellipsis"
           />
         </Link>,
