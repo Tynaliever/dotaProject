@@ -1,0 +1,31 @@
+{
+  "products": [
+    {
+      "model": "ABADDON",
+      "description": "Abaddon, способный лечиться за счёт вражеских атак, может пережить почти любое нападение. Он всегда готов вклиниться в битву, закрывая союзников щитом и запуская обоюдоострые витки мглы, которыми он увечит врагов и исцеляет товарищей.",
+      "price": 2150,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.png",
+      "image2": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.png",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/abaddon.webm",
+      "id": 2
+    },
+    {
+      "model": "ALCHEMIST",
+      "description": "Alchemist, синтезирующий дополнительные средства за каждое убийство, с лёгкостью получает необходимое вооружение. Он сражается во имя своей жадности, используя едкую кислоту и запас нестабильных химикатов.",
+      "price": 7100,
+      "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.png",
+      "image2": "https://content.thewosgroup.com/productimage/17381091/17381091_2.jpg?impolicy=zoom",
+      "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/alchemist.webm",
+      "id": 3
+    },
+    {
+      "model": "asd",
+      "description": "asd",
+      "price": 123,
+      "image1": "asd",
+      "image2": "asd",
+      "video": "asd",
+      "id": 4
+    }
+  ]
+}

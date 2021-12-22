@@ -1,0 +1,8 @@
+.products-search {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container{
+    background-color: black;
+}

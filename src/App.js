@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import "antd/dist/antd.css";
+import "./App.css";
+
+import Header from "./components/Header/Header";
+import "antd/dist/antd.css";
+import AuthContextProvider from "./contexts/authContext";
+import { BrowserRouter } from "react-router-dom";
+import ProductsContextProvider from "./contexts/productsContext";
+import Routing from "./Routing";
+
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContextProvider>
+      <ProductsContextProvider>
+      <BrowserRouter>
+        <Header />
+        <Routing/>
+      </BrowserRouter>
+      </ProductsContextProvider>
+    </AuthContextProvider>
   );
-}
+};
 
 export default App;

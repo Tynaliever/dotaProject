@@ -1,0 +1,224 @@
+.home {
+  background-color: black;
+  position: relative;
+  z-index: -1000;
+}
+
+.background-video {
+  position: relative;
+  color: #fff;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.fade-background-video {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.fade-background-video .fade-video {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(90%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.733)), to(black));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 90%, rgba(0, 0, 0, 0.733) 100%, black 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.background-video-text {
+  width: 50%;
+  text-align: center;
+  padding-top: 300px;
+  font-size: 60px;
+  line-height: 113%;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #ffffffee;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 20px #000;
+}
+
+.home-battle {
+  width: 100%;
+  min-height: 764px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 100px;
+  top: -5px;
+}
+
+.home-battle .home-battle_section {
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  height: 30vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px;
+}
+
+.home-battle .home-battle_section .home-battle_img {
+  width: 100%;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.home-battle .home-battle_section .home-battle-fade {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.home-battle .home-battle_section .home-battle-fade .fade-homepage {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.733)), to(black));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.733) 90%, black 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.home-hero-image {
+  width: 100%;
+  max-width: 100%;
+  min-height: 2000px;
+  background-size: 3500px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: -2;
+  z-index: 40;
+  position: relative;
+  background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/heroes_full.jpg");
+}
+
+.home-hero-image .fade-home-hero-image {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  pointer-events: none;
+}
+
+.home-hero-image .fade-home-hero-image .fade-hero {
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(60%, rgba(0, 0, 0, 0)), color-stop(90%, rgba(0, 0, 0, 0.733)), to(black));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.733) 90%, black 100%);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.fade-homepage-text {
+  opacity: 1;
+  -webkit-transform: none;
+          transform: none;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #E2DACE90;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 105%;
+  height: auto;
+  margin: auto;
+  padding-top: 400px;
+  font-size: 50px;
+}
+
+.fade-homepage-text .first-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 100px;
+  color: #e2dace;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 105%;
+}
+
+.battle-border {
+  margin: 10px auto;
+  width: 80px;
+  height: 3px;
+  min-height: 3px;
+  background-color: #ff6046;
+  border-radius: 1px;
+}
+
+.battle-text {
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #e2dace;
+  font-size: 26px;
+  line-height: 115%;
+  font-weight: 100;
+}
+
+.text-btn:hover {
+  background-color: black;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+/*# sourceMappingURL=Home.css.map */
