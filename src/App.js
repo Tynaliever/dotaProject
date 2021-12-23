@@ -13,6 +13,7 @@ import CartContextProvider from "./contexts/cartContext";
 import Routing from "./Routing";
 import FavouriteContextProvider from "./contexts/favoriteContext";
 import CommentContextProvider from "./contexts/CommentContext";
+import LikesContextProvider from "./contexts/likesContext";
 
 
 const App = () => {
@@ -21,12 +22,14 @@ const App = () => {
 <CommentContextProvider>
       <CartContextProvider>
         <FavouriteContextProvider>
+        <LikesContextProvider>
         <ProductsContextProvider>
           <BrowserRouter>
             <Header />
             <Routing />
           </BrowserRouter>
         </ProductsContextProvider>
+          </LikesContextProvider>
         </FavouriteContextProvider>
       </CartContextProvider>
       </CommentContextProvider>

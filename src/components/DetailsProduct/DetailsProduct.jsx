@@ -7,6 +7,7 @@ import { productsContext } from "../../contexts/productsContext";
 
 import "./DetailProduct.css";
 import Comment from "../Comments/Comment";
+import Likes from "../Likes/Likes";
 
 const DetailsProduct = ({ item }) => {
   const { id } = useParams();

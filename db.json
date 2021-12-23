@@ -99,5 +99,133 @@
       "createdAtMs": 1640257980109,
       "id": 4
     }
+  ],
+  "likes": [
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "2",
+      "rate": 1,
+      "id": 1
+    },
+    {
+      "owner": "aziretbp001@gmail.com",
+      "productId": "2",
+      "rate": 1,
+      "id": 2
+    },
+    {
+      "owner": "aziretbp001@gmail.com",
+      "productId": "3",
+      "rate": 1,
+      "id": 3
+    },
+    {
+      "owner": "aziretbp001@gmail.com",
+      "productId": "4",
+      "rate": 1,
+      "id": 4
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "4",
+      "rate": 1,
+      "id": 5
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 6
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 7
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 8
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 9
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 10
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 11
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 12
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 13
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 14
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 15
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 16
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 17
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 18
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 19
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 20
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 21
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 22
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "rate": 1,
+      "id": 23
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "3",
+      "rate": 1,
+      "id": 24
+    }
   ]
 }

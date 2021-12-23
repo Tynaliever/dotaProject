@@ -97,14 +97,6 @@ const ProductsList = () => {
           </div>
         </div>
       </div>
-      {/* {showFilters ? (
-        <Filters
-          brand={brand}
-          setBrand={setBrand}
-          price={price}
-          setPrice={setPrice}
-        />
-      ) : null} */}
       <div className="products-list">
         {products.length > 0 ? (
           products.map((item) => <ProductCard item={item} />)

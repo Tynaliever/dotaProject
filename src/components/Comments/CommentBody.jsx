@@ -4,6 +4,7 @@ import { timeSince } from "../../helpers/calcTimeLeft";
 import { commentsContext } from "../../contexts/CommentContext";
 import { useParams } from "react-router";
 import { authContext } from "../../contexts/authContext";
+import Likes from "../Likes/Likes";
 
 const CommentBody = ({ item, doctor }) => {
     const params = useParams()
