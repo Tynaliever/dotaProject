@@ -6,7 +6,7 @@ import { Carousel, Button } from "antd";
 import { productsContext } from "../../contexts/productsContext";
 
 import "./DetailProduct.css";
-import { cartContext } from "../../contexts/cartContext";
+import Comment from "../Comments/Comment";
 
 const DetailsProduct = ({ item }) => {
   const { id } = useParams();
@@ -33,13 +33,7 @@ const DetailsProduct = ({ item }) => {
             <div style={{ width: "35vw", color: "white" }}>
               <h3 className="detail-title">{products.model}</h3>
               <h2 style={{ color: "white" }}>{"$" + products.price}</h2>
-              <button
-                className="detail-btn"
-                size="large"
-                style={{ margin: "15px 0px", width: "100%" }}
-              >
-                ADD TO CART
-              </button>
+              <div className="battle-border" style={{width: '100%'}}></div>
               <div className="detail-desc">{products.description}</div>
             </div>
             <div style={{ width: "40vw" }}>
@@ -56,6 +50,8 @@ const DetailsProduct = ({ item }) => {
       ) : (
         <h2>Loading...</h2>
       )}
+      <div className="battle-border" style={{width: '100%'}}></div>
+      <Comment/>
     </div>
   );
 };

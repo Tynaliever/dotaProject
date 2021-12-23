@@ -11,6 +11,7 @@ import ProductsList from "./components/ProductsList/ProductsList";
 import { useAuth } from "./contexts/authContext";
 import AdminPage from "./pages/AdminPage";
 import Error404 from "./pages/Error404";
+import Favorite from "./components/Favorite/Favorite";
 
 const Routing = () => {
   let PUBLIC_ROUTES = [
@@ -43,7 +44,12 @@ const Routing = () => {
       link: "/cart",
       element: <Cart />,
       id: 6
-    }
+    },
+    {
+      link: "/favourite",
+      element: <Favorite />,
+      id: 7
+    },
   ];
   const ADMIN_ROUTES = [
     {

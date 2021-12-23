@@ -17,7 +17,7 @@
       "id": 2
     },
     {
-      "model": "Ancient Apparition",
+      "model": "ANCIENT APPARITION",
       "description": "Ancient Apparition, способный запустить мощный заряд льда через всё поле битвы, может заморозить раненых врагов до смерти, где бы те ни находились. Он держит врагов в напряжении, замедляя их и помогая своим союзникам.",
       "price": 10,
       "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/ancient_apparition.png",
@@ -64,6 +64,40 @@
       "image1": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/batrider.png",
       "video": "https://cdn.cloudflare.steamstatic.com/apps/dota2/videos/dota_react/heroes/renders/batrider.webm",
       "id": 8
+    }
+  ],
+  "comments": [
+    {
+      "text": "asdasd",
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "2",
+      "createdAt": "2021-12-23T09:45:36.358Z",
+      "createdAtMs": 1640252736358,
+      "id": 1
+    },
+    {
+      "text": "asdsadsadas",
+      "owner": "erboshka@mail.ru",
+      "productId": "2",
+      "createdAt": "2021-12-23T10:15:44.893Z",
+      "createdAtMs": 1640254544893,
+      "id": 2
+    },
+    {
+      "text": "жовлафжфвлоап\n",
+      "owner": "erboshka@mail.ru",
+      "productId": "1",
+      "createdAt": "2021-12-23T11:12:57.425Z",
+      "createdAtMs": 1640257977425,
+      "id": 3
+    },
+    {
+      "text": "фывфывыфв",
+      "owner": "erboshka@mail.ru",
+      "productId": "1",
+      "createdAt": "2021-12-23T11:13:00.109Z",
+      "createdAtMs": 1640257980109,
+      "id": 4
     }
   ]
 }

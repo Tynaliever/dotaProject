@@ -1,10 +1,11 @@
-import { ShoppingCartOutlined } from "@ant-design/icons";
+import { ShoppingCartOutlined, StarOutlined } from "@ant-design/icons";
 import { Badge } from "antd";
 import React, { useContext, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useAuth } from "../../contexts/authContext";
 
 import { cartContext } from "../../contexts/cartContext";
+import { favoriteContext, favouriteContext } from "../../contexts/favoriteContext";
 import { productsContext } from "../../contexts/productsContext";
 
 import "./Header.css";
@@ -16,6 +17,11 @@ const Header = () => {
   const { getCart, cartLength } = useContext(cartContext);
   useEffect(() => {
     getCart();
+  }, []);
+
+  const { getFavourite, favouriteLength } = useContext(favouriteContext);
+  useEffect(() => {
+    getFavourite();
   }, []);
 
   const {
@@ -53,7 +59,14 @@ const Header = () => {
       </div>
       <div className="header-right">
       {email ? (
-      <div style={{marginTop: '25px'}}>
+      <div style={{marginTop: '25px', width: '15%', display: 'flex', justifyContent: 'space-between'}}>
+        <Link to="/favourite">
+            <Badge count={+favouriteLength}>
+            <StarOutlined
+                style={{ fontSize: "30px", color: 'white', cursor: "pointer" }}
+              />
+            </Badge>
+          </Link>
           <Link to="/cart">
             <Badge count={+cartLength}>
               <ShoppingCartOutlined

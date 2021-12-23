@@ -10,15 +10,21 @@ const Cart = () => {
   }, []);
   console.log(cart);
   return (
-    <div className="container">
+    <div className="favorite-container">
       <List
+        style={{ marginTop: "50px" }}
         itemLayout="vertical"
         size="large"
         dataSource={cart?.products}
-        footer={<h2>Total: {cart?.totalPrice}$</h2>}
+        footer={
+          <h2 style={{ color: "#7CFC00", fontSize: "25px" }}>
+            Total: {cart?.totalPrice}$
+          </h2>
+        }
         renderItem={(item) => <CartItem item={item} />}
       />
     </div>
+    
   );
 };
 

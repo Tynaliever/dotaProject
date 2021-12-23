@@ -7,8 +7,16 @@ const CartItem = ({ item }) => {
   const { deleteFromCart, changeProductCount } = useContext(cartContext);
   return (
     <List.Item
+    style={{border: 'none', position: 'relative'}}
       key={item.id}
-      extra={<img width={272} alt="img" src={item.item.image1} />}
+      extra={<video
+        height='272px'
+          src={item.item.video}
+          width="100%"
+          autoPlay
+          loop
+          muted
+        ></video>}
     >
       <List.Item.Meta
         title={
@@ -20,14 +28,14 @@ const CartItem = ({ item }) => {
             }}
           >
             <div>
-              <h4>{item.item.model}</h4>
+              <h4 style={{color:"white", fontSize: '30px'}}>{item.item.model}</h4>
             </div>
-            <h3>{"$" + item.item.price}</h3>
+            <h3 style={{color: '#7CFC00', fontSize: '30px'}}>{"$" + item.item.price}</h3>
           </div>
         }
         description={
           <>
-            <div>{item.item.description}</div>
+            <div style={{color: '#E2DACE90', fontSize: '20px'}}>{item.item.description}</div>
 
             <div
               style={{
@@ -38,7 +46,7 @@ const CartItem = ({ item }) => {
               }}
             >
               <div>
-                <h4>Quantity</h4>
+                <h4 style={{color:"white"}}>Quantity</h4>
                 <Button
                   onClick={() =>
                     changeProductCount(item.count - 1, item.item.id)
@@ -56,13 +64,13 @@ const CartItem = ({ item }) => {
                 </Button>
               </div>
               <div>
-                <h4>SubPrice</h4>
-                <h3>{"$" + item.subPrice}</h3>
+                <h4 style={{color:"white"}}>SubPrice</h4>
+                <h3 style={{color: '#7CFC00', fontSize: '15px'}}>{"$" + item.subPrice}</h3>
               </div>
             </div>
-            <Button onClick={() => deleteFromCart(item.item.id)}>
+            <button className="favorite-btn" style={{height: '15%'}} onClick={() => deleteFromCart(item.item.id)}>
               Remove from cart
-            </Button>
+            </button>
           </>
         }
       />

@@ -9,12 +9,18 @@ import {
 } from "@ant-design/icons";
 
 import { cartContext } from "../../contexts/cartContext";
+import { favoriteContext, favouriteContext } from "../../contexts/favoriteContext";
 
 const ProductCard = ({ item }) => {
   const { addProductToCart, checkItemInCart } = useContext(cartContext);
   const [checkInCart, setCheckInCart] = useState(checkItemInCart(item.id));
   useEffect(() => {
     setCheckInCart(checkItemInCart(item.id))
+  })
+  const { addProductToFavourite, checkItemInFavourite } = useContext(favouriteContext);
+  const [checkInFavourite, setCheckInFavourite] = useState(checkItemInFavourite(item.id));
+  useEffect(() => {
+    setCheckInFavourite(checkItemInFavourite(item.id))
   })
   return (
     <Card
@@ -24,7 +30,10 @@ const ProductCard = ({ item }) => {
       style={{ width: "280px", margin: "10px" }}
       cover={<img alt="example" src={item.image1} />}
       actions={[
-        <StarOutlined style={{color: "yellow", fontSize: "25px"}} />,
+        <StarOutlined style={{fontSize: "25px", color: checkInFavourite ? "red" : "yellow"}} onClick={() => {
+          addProductToFavourite(item);
+          setCheckInFavourite(checkItemInFavourite(item.id));
+        }}  />,
         <ShoppingCartOutlined
           style={{backgroundColor: 'transparent', color: checkInCart ? "red" : "black", fontSize: "25px" }}
           onClick={() => {
