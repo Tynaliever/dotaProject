@@ -12,6 +12,10 @@ import { useAuth } from "./contexts/authContext";
 import AdminPage from "./pages/AdminPage";
 import Error404 from "./pages/Error404";
 import Favorite from "./components/Favorite/Favorite";
+import Invoic from "./components/Invoice/Invoice";
+import CreditApp from '../src/components/CreditCard/CreditApp';
+import Chat from "./components/Chat/Chat";
+
 
 const Routing = () => {
   let PUBLIC_ROUTES = [
@@ -49,6 +53,21 @@ const Routing = () => {
       link: "/favourite",
       element: <Favorite />,
       id: 7
+    },
+    {
+      link: "/invoice",
+      element: <Invoic />,
+      id: 8
+    },
+    {
+      link: "/credit-card",
+      element: <CreditApp />,
+      id: 9
+    },
+    {
+      link: "/chat",
+      element: <Chat />,
+      id: 10
     },
   ];
   const ADMIN_ROUTES = [

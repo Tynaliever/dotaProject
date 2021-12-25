@@ -43,6 +43,7 @@ const Header = () => {
           <div className="header-text">Герои</div>
         </Link>
         <div className="header-text">Новости</div>
+        <Link to="/chat"><div className="header-text">Live chat</div></Link>
         <a href="https://t.me/Dota_hackston_bot"><div className="header-text">Telegram</div></a>
         {email === "tynaliev13th@gmail.com" ? (
           <Link

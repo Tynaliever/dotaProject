@@ -1,0 +1,19 @@
+.chat-container {
+  background-image: url(https://images8.alphacoders.com/479/thumb-1920-479554.jpg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 755px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat-body {
+  padding: 0 100px;
+  width: 100%;
+}
+/*# sourceMappingURL=Chat.css.map */

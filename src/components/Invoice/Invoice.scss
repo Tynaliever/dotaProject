@@ -1,0 +1,64 @@
+.invoice-container{
+    background-image: url(https://images8.alphacoders.com/479/thumb-1920-479554.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 755px;
+}
+
+.check {
+    width: 80%;
+    height: 900px;
+    background-color: rgba(250, 253, 253, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+  }
+  
+  .check_inner {
+    width: 90%;
+    height: 90%;
+  }
+  
+  .ch {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .check-words {
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  @media all and (max-width: 520px) {
+    .check-words {
+      font-size: 15px;
+    }
+  }
+  @media all and (max-width: 415px) {
+    .total {
+      position: absolute;
+      right: 60px;
+      bottom: -10px;
+    }
+  }
+  @media all and (max-width: 370px) {
+    .thanks {
+      display: none;
+    }
+    .total {
+      bottom: -20px;
+    }
+  }
+  @media all and (max-width: 328px) {
+    .total {
+      bottom: -30px;
+      right: 130px;
+    }
+  }

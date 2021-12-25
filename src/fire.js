@@ -2,6 +2,8 @@ import firebase from "firebase/compat/app";
 import "firebase/compat/app";
 import "firebase/compat/auth";
 import { getAuth } from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { getFirestore } from 'firebase/firestore'
 
 const firebaseConfig = {
     apiKey: "AIzaSyDSJbUTp3H57ORHTgLRxydO_UrecJLvx9Q",
@@ -13,5 +15,7 @@ const firebaseConfig = {
   };
 const fire = firebase.initializeApp(firebaseConfig);
 
+const db = getFirestore(initializeApp(firebaseConfig))
 export const googleAcc = getAuth(fire);
+export {db}
 export default fire;

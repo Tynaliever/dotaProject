@@ -1,0 +1,42 @@
+/* * { 
+    border: 0.5px solid black; 
+} */ 
+ 
+ 
+.inputCard{ 
+    flex-direction: column; 
+    display: flex; 
+    /* justify-content: center; */ 
+    align-items: center; 
+    margin-top: 15px; 
+    
+     
+} 
+ 
+.button{ 
+    color: green; 
+}
+
+.credit-card-container{
+    background-image: url(https://images8.alphacoders.com/479/thumb-1920-479554.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 755px;
+}
+
+.form-control{
+        width: 100%;
+        border: none;
+        outline: none;
+        font-size: 19px;
+        padding: 10px;
+        letter-spacing: 2px;
+        border-radius: 5px;
+        margin-top: 10px;
+}
+
+.form-group{
+    width: 100%;
+    margin-top: 3px;
+}
