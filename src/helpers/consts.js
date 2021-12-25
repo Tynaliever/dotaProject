@@ -1,4 +1,4 @@
-export const PRODUCTS_API = "http://localhost:8000/products";
-export const APIcomments = 'http://localhost:8000/comments';
+export const PRODUCTS_API = "https://dota2hackaton.herokuapp.com/api/products";
+export const APIcomments = 'https://dota2hackaton.herokuapp.com/api/comments';
 
-export const APIlikes = 'http://localhost:8000/likes';
+export const APIlikes = 'https://dota2hackaton.herokuapp.com/api/likes';
