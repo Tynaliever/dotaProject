@@ -110,10 +110,10 @@
   width: 100%;
   max-width: 100%;
   min-height: 2000px;
-  background-size: 3500px;
+  max-height: 2000px;
+  background-size: 200%;
   background-position: center top;
   background-repeat: no-repeat;
-  margin-bottom: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,8 +124,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: -2;
-  z-index: 40;
   position: relative;
   background-image: url("https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/heroes_full.jpg");
 }
@@ -135,7 +133,8 @@
   top: 0px;
   right: 0px;
   width: 100%;
-  height: 100%;
+  min-height: 800px;
+  max-height: 2000px;
   position: absolute;
   pointer-events: none;
 }
@@ -219,5 +218,26 @@
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.ti-winners-image {
+  background-image: url(https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//home/dpc.jpg);
+  width: 100%;
+  height: 800px;
+  margin: auto;
+  margin-top: 300px;
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=Home.css.map */

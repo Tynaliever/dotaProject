@@ -14,6 +14,7 @@ import Routing from "./Routing";
 import FavouriteContextProvider from "./contexts/favoriteContext";
 import CommentContextProvider from "./contexts/CommentContext";
 import LikesContextProvider from "./contexts/likesContext";
+import Footer from "./components/Footer/Footer";
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <BrowserRouter>
             <Header />
             <Routing />
+            <Footer/>
           </BrowserRouter>
         </ProductsContextProvider>
           </LikesContextProvider>

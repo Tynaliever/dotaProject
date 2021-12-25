@@ -6,6 +6,7 @@ const CartItem = ({ item }) => {
   // console.log(item);
   const { deleteFromCart, changeProductCount } = useContext(cartContext);
   return (
+    <>
     <List.Item
     style={{border: 'none', position: 'relative'}}
       key={item.id}
@@ -75,6 +76,7 @@ const CartItem = ({ item }) => {
         }
       />
     </List.Item>
+    </>
   );
 };
 

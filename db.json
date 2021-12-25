@@ -98,6 +98,21 @@
       "createdAt": "2021-12-23T11:13:00.109Z",
       "createdAtMs": 1640257980109,
       "id": 4
+    },
+    {
+      "text": "ЛУЧШИЙ",
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "8",
+      "createdAt": "2021-12-24T07:13:51.109Z",
+      "createdAtMs": 1640330031109,
+      "id": 5
+    },
+    {
+      "text": "dlhgldghlf",
+      "productId": "8",
+      "createdAt": "2021-12-24T09:54:07.387Z",
+      "createdAtMs": 1640339647387,
+      "id": 7
     }
   ],
   "likes": [
@@ -226,6 +241,23 @@
       "productId": "3",
       "rate": 1,
       "id": 24
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "8",
+      "rate": 1,
+      "id": 25
+    },
+    {
+      "productId": "8",
+      "rate": 1,
+      "id": 26
+    },
+    {
+      "owner": "tynaliev13th@gmail.com",
+      "productId": "1",
+      "rate": 1,
+      "id": 27
     }
   ]
 }

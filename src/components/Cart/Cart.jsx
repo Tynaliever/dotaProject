@@ -23,6 +23,7 @@ const Cart = () => {
         }
         renderItem={(item) => <CartItem item={item} />}
       />
+      <button>Buy</button>
     </div>
     
   );
