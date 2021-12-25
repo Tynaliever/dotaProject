@@ -7,6 +7,7 @@ import { useAuth } from "../../contexts/authContext";
 import { cartContext } from "../../contexts/cartContext";
 import { favoriteContext, favouriteContext } from "../../contexts/favoriteContext";
 import { productsContext } from "../../contexts/productsContext";
+import { Menu, Dropdown, Button, Space } from 'antd';
 
 import "./Header.css";
 
@@ -29,22 +30,43 @@ const Header = () => {
     user: { email },
   } = useAuth();
 
+  const menu = (
+  <Menu className="asd" style={{backgroundColor: 'transparent'}}>
+  <Menu.Item className="asd-text" style={{color: 'white'}}>
+  <Link to="/products">
+          <div className="header-text">Герои</div>
+        </Link>
+  </Menu.Item>
+  <Menu.Item  className="asd-text" style={{color: 'white'}}>
+  <Link to="/news"><div className="header-text">Новости</div></Link>
+  </Menu.Item>
+  <Menu.Item  className="asd-text" style={{color: 'white'}}>
+  <Link to="/chat"><div className="header-text">Live chat</div></Link>
+  </Menu.Item>
+  <Menu.Item  className="asd-text" style={{color: 'white'}}>
+  <a href="https://t.me/Dota_hackston_bot"><div className="header-text">Telegram</div></a>
+  </Menu.Item>
+</Menu>)
+
   return (
     <div className="container header">
       <div className="header-left">
-        <Link to="/">
+        <Link className="asdbkb" to="/">
           <img
             className="header-logo"
             src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/global/dota2_logo_horiz.png"
             alt="header logo"
           />
         </Link>
-        <Link to="/products">
+        <Dropdown className="asd" style={{backgroundColor: 'transparent'}} overlay={menu} placement="bottomCenter">
+        <Button>Menu</Button>
+      </Dropdown>
+        <Link className="asdbkb" to="/products">
           <div className="header-text">Герои</div>
         </Link>
-        <div className="header-text">Новости</div>
-        <Link to="/chat"><div className="header-text">Live chat</div></Link>
-        <a href="https://t.me/Dota_hackston_bot"><div className="header-text">Telegram</div></a>
+        <Link className="asdbkb" to="/news"><div className="header-text">Новости</div></Link>
+        <Link className="asdbkb" to="/chat"><div className="header-text">Live chat</div></Link>
+        <a className="asdbkb" href="https://t.me/Dota_hackston_bot"><div className="header-text">Telegram</div></a>
         {email === "tynaliev13th@gmail.com" ? (
           <Link
             className={

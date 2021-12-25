@@ -148,4 +148,55 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+
+.asd {
+  background-color: transparent;
+  color: #fff;
+  opacity: 0.8;
+  border: none;
+  display: none;
+  font-size: 18px;
+}
+
+.asd:hover {
+  opacity: 1;
+  color: black;
+}
+
+.asd-text:hover {
+  color: black;
+}
+
+@media all and (max-width: 1100px) {
+  .asd {
+    display: block;
+  }
+  .asdbkb {
+    display: none;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .header-logo {
+    width: 50px;
+  }
+  .header-btn {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 650px) {
+  .header-logo {
+    width: 10px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .header-btn {
+    width: 30%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+  }
+}
 /*# sourceMappingURL=Header.css.map */

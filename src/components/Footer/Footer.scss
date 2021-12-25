@@ -27,3 +27,39 @@
     width: 500px;
     margin: 0 auto;
 }
+
+@media all and (max-width: 650px) {
+    .footer{
+        width: 100%;
+    }
+    .footer-content{
+        width: 300px;
+    }
+    .footer-text{
+        width: 400px;
+    }
+}
+
+@media all and (max-width: 595px) {
+    .footer{
+        width: 100%;
+    }
+    .footer-content{
+        width: 200px;
+    }
+    .footer-text{
+        width: 300px;
+    }
+}
+
+@media all and (max-width: 420px) {
+    .footer{
+        width: 100%;
+    }
+    .footer-content{
+        display: none;
+    }
+    .footer-text{
+        width: 200px;
+    }
+}

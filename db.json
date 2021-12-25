@@ -113,6 +113,14 @@
       "createdAt": "2021-12-24T09:54:07.387Z",
       "createdAtMs": 1640339647387,
       "id": 7
+    },
+    {
+      "text": "ALOOOOO",
+      "owner": "erboshka@mail.ru",
+      "productId": "8",
+      "createdAt": "2021-12-25T18:25:34.236Z",
+      "createdAtMs": 1640456734236,
+      "id": 8
     }
   ],
   "likes": [
@@ -258,6 +266,12 @@
       "productId": "1",
       "rate": 1,
       "id": 27
+    },
+    {
+      "owner": "erboshka@mail.ru",
+      "productId": "8",
+      "rate": 1,
+      "id": 28
     }
   ]
 }

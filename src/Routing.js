@@ -15,6 +15,7 @@ import Favorite from "./components/Favorite/Favorite";
 import Invoic from "./components/Invoice/Invoice";
 import CreditApp from '../src/components/CreditCard/CreditApp';
 import Chat from "./components/Chat/Chat";
+import News from "./components/News/News";
 
 
 const Routing = () => {
@@ -68,6 +69,11 @@ const Routing = () => {
       link: "/chat",
       element: <Chat />,
       id: 10
+    },
+    {
+      link: "/news",
+      element: <News />,
+      id: 11
     },
   ];
   const ADMIN_ROUTES = [
